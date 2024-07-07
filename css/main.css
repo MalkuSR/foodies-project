@@ -1,0 +1,328 @@
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--primary-color);
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+/* variables define */
+:root{
+    --primary-color: #A82C48;
+    --secondry-color:#4a1520;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#000;
+    --primary-font:'Roboto', sans-serif;
+    --secondry-font:'Quicksand', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+/* custom scroll bar */
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+/* custom css desighn */
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondry-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-color);
+    color: var(--primary-color);
+    line-height: 3rem;
+}
+
+h4{
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color: var(--white-color);
+}
+
+/* header design */
+ 
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    background-color: var(--white-color);
+    left: 0;
+    z-index: 10;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline:unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.collapse ul li a{
+    color: var(--primary-color);
+    font-weight: 600;
+    
+}
+
+/* change navbar on scroll */
+
+.navigation-wrap .scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.9);
+    transition: all .15s ease-out 0s;
+}
+
+/*
+top-banner Design 
+ */
+
+ .top-banner{
+    width: 100%;
+    background: url(assets/images/pexels-ella-olsson-572949-1640777.jpg);
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+ }
+
+ /* counter desighn  */
+ .counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+ }
+
+ .counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+ }
+ /* story section */
+ .story-section{
+    background-image: url(assets/images/pexels-vanmalidate-769290.jpg);
+    background-size: cover;
+ }
+
+ /* explore food section */
+
+ .img-fluid{
+    border-radius: 0.567rem;
+ }
+
+ .card{
+    border: none;
+ }
+
+ .card span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+ }
+
+ .card span del{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-gray);
+ }
+
+ /* testimonials section */
+.testimonial-section{
+    background: var(--primary-color);
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.15rem;
+    background: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.325rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-item .carousel-caption img{
+    max-width: 5rem;
+    border-radius: 20%;
+    padding: 0.3225rem;
+}
+
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: none;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+
+/* FAQ SECTION */
+.faq{
+    color: var(--secondry-color);
+    font-family: cursive;
+}
+/* subscribe section */
+ .offer-h2{
+    color: var(--secondry-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ /* footer */
+ .footer{
+    background-color: var(--primary-color);
+ }
+
+ .links{
+    color: var(--white-color);
+ }
+
+ .links a{
+    text-decoration: none;
+    color: var(--white-color);
+    letter-spacing: 1;
+ }
+
+ .icons i{
+    color: var(--white-color);
+ }
+
+ .rights{
+    color: white;
+    letter-spacing: 1;
+ }
