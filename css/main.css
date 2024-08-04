@@ -207,7 +207,7 @@ top-banner Design
 
  .top-banner{
     width: 100%;
-    background: url(assets/images/pexels-ella-olsson-572949-1640777.jpg);
+    background: url(../assets/images/pexels-ella-olsson-572949-1640777.jpg);
     background-size: cover;
     padding: 16.875rem 0 9.375rem;
  }
@@ -224,7 +224,7 @@ top-banner Design
  }
  /* story section */
  .story-section{
-    background-image: url(assets/images/pexels-vanmalidate-769290.jpg);
+    background-image: url(../assets/images/pexels-vanmalidate-769290.jpg);
     background-size: cover;
  }
 
